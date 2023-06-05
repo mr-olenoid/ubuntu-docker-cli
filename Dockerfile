@@ -1,4 +1,4 @@
-FROM ubuntu:Lunar
+FROM ubuntu:lunar
 RUN for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 RUN apt-get update -y
 RUN apt-get upgrade -y ca-certificates curl gnupg
